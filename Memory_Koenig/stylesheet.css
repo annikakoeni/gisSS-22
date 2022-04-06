@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
 body {
     background-color: #F2D091;
     padding: 50px;
@@ -9,18 +11,38 @@ body {
   p {color: #262626;
     font-family: Arial, Helvetica, sans-serif;
     }
-    h1{color: #591C21;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size:x-large;
-        font-weight: bold;
-        font-stretch:ultra-expanded;
-
-}
+ 
 h2{color: #262626;
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
 
 }
+
+.head {
+  font-family: Roboto;
+font-size: 400%;
+letter-spacing: 1em;
+  color: #591C21;
+  position:relative;
+  left: 72pt;
+  }
+
+ a.linkgame:hover{
+       color: white;
+       background-color:#F29877;
+  
+  }
+  .memory{
+    font-family: Roboto;
+font-size: 200%;
+letter-spacing: 1em;
+  color: #591C21;
+  position: relative;
+  left: 550pt;
+
+  }
+
+
 
     
 
