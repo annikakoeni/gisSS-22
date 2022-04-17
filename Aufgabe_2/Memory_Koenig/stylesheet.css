@@ -19,27 +19,14 @@ body {
   display:inline-flex;
   flex-wrap:wrap;
   justify-content: space-between;
+  margin: 3%;
 }
 #div1 img{
   width: 20%;
   height: 100%;
   
 }
-/*
-#background1 {
-  width: 20%;
-  height: 100%;
-}
 
-#background2 {
-  width: 20%;
-  height: 100%;
-  float:right;
-}
-#background3 {
-  width
-}
-*/
 
 p {
   color: #262626;
@@ -62,6 +49,7 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   display: block;
+  text-align: center;
 
 }
 
@@ -70,20 +58,68 @@ a.linkgame:hover {
   background-color: #F29877;
 
 }
+a.memory:hover{
+  color: white;
+  background-color: #F29877;
+}
+
+
+
+
 
 .memory {
   font-family: Roboto;
   font-size: 200%;
   letter-spacing: 1em;
   color: #591C21;
-  position: relative;
-  left: 35%;
   text-decoration: none;
+  position: relative;
+  float: left;
+  left:38%;
+}
+p {
+  font-family: Roboto;
+  font-weight: bolder;
+  text-align: center;
+}
+#brain{
+  font-size: 120%;
+  letter-spacing: 1em;
+}
+table{
+  font-family: Roboto;
 
 }
+#table{
+  width: 100%;
+  flex-wrap: wrap;
+  display: inline-flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 120%;
+  height: 10%;
+  
+}
+tr{
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
 
-
-
+a.linkgame {
+  display: inline-flex;
+}
+#link{
+  justify-content: center;
+  flex-wrap: wrap;
+  display: inline-flex;
+  width: 100%;
+  text-decoration: none;
+  color: #262626;
+  font-family: Roboto;
+  font-weight: bolder;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
 
 
 
