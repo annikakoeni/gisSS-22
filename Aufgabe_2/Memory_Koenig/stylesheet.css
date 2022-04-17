@@ -1,53 +1,93 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
+
+
 body {
-    background-color: #F2D091;
-    padding: 50px;
-    border: 7px solid #F29877;
-    margin: 0;
-    width: auto;
-    height: 61em;
-  }
-  p {color: #262626;
-    font-family: Arial, Helvetica, sans-serif;
-    }
- 
-h2{color: #262626;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: medium;
+  width: auto;
+  background-color: #F2D091;
+  padding: 5%;
+  margin: 2%;
+  border: 7px solid #F29877;
+  position: relative;
+  height: 64em;
+  display: block;
+}
+
+#div1 {
+  width: auto;
+  height: 40%;
+  display:inline-flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+#div1 img{
+  width: 20%;
+  height: 100%;
+  
+}
+/*
+#background1 {
+  width: 20%;
+  height: 100%;
+}
+
+#background2 {
+  width: 20%;
+  height: 100%;
+  float:right;
+}
+#background3 {
+  width
+}
+*/
+
+p {
+  color: #262626;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  color: #262626;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
 
 }
 
 .head {
   font-family: Roboto;
-font-size: 400%;
-letter-spacing: 1em;
-  color: #591C21;
-  position:relative;
-  left: 72pt;
-  }
-
- a.linkgame:hover{
-       color: white;
-       background-color:#F29877;
-  
-  }
-  .memory{
-    font-family: Roboto;
-font-size: 200%;
-letter-spacing: 1em;
+  font-size: 300%;
+  letter-spacing: 1em;
   color: #591C21;
   position: relative;
-  left: 550pt;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 
-  }
+}
+
+a.linkgame:hover {
+  color: white;
+  background-color: #F29877;
+
+}
+
+.memory {
+  font-family: Roboto;
+  font-size: 200%;
+  letter-spacing: 1em;
+  color: #591C21;
+  position: relative;
+  left: 35%;
+  text-decoration: none;
+
+}
 
 
 
-    
 
-  
-  /*@media (min-width: 20em) {
+
+
+/*@media (min-width: 20em) {
     body {
         width: 42%;
         display: inline;}}*/
