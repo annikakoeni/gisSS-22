@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+
+
+ /*
+body {
+
+  width: auto;
+  background-color: var(--secondary);
+  padding: 5%;
+  margin: 2%;
+  border: 7px solid var(--primary);
+  position: relative;
+  height: 100%;
+  display: flex;
+}
+*/
+#pagestyle {
+  display: block;
+  border: 7px solid var(--primary);
+  height: 100%;
+
+}
+body, html {
+  height: 100%;
+  background-color: var(--secondary);
+  }
+
+#cards {
+  display:flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#cards img{
+  width: 200px;
+  height: auto;
+  
+}
+:root{
+  --primary: #F29877;
+  --secondary: #F2D091;
+  --third: #262626;
+  --fourth: #591C21;
+}
+
+
+
+p {
+  color: var(--third);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  color: var(--third);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+
+}
+
+.head {
+  font-family: Roboto;
+  font-size: 300%;
+  letter-spacing: 1em;
+  color: var(--fourth);
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+
+}
+#after::after{
+content: "<3";
+}
+
+a.linkgame:hover {
+  color: white;
+  background-color: var(--primary);
+
+}
+a.memory:hover{
+  color: white;
+  background-color: var(--primary);
+}
+
+nav{
+  text-align: center;
+  margin-bottom: 40px;
+}
+#logocat {
+  width: 60px;
+  height: auto;
+  left: 100%;
+  
+}
+
+
+
+.memory {
+  font-family: Roboto;
+  font-size: 200%;
+  letter-spacing: 1em;
+  color: var(--fourth);
+  text-decoration: none;
+  position: relative;
+  margin: auto;
+  display: inline-block;
+  text-align: center;
+
+}
+p {
+  font-family: Roboto;
+  font-weight: bolder;
+  text-align: center;
+}
+#brain{
+  font-size: 120%;
+  letter-spacing: 1em;
+}
+table{
+  font-family: Roboto;
+
+}
+#table{
+  width: 100%;
+  flex-wrap: wrap;
+  display: inline-flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 120%;
+  height: 10%;
+  
+}
+tr{
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+a.linkgame {
+  display: inline-flex;
+}
+#link{
+  justify-content: center;
+  flex-wrap: wrap;
+  display: inline-flex;
+  width: 100%;
+  text-decoration: none;
+  color: var(--third);
+  font-family: Roboto;
+  font-weight: bolder;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+@keyframes pulse {
+  20% {
+    padding: 3%;
+    background-color: var(--primary);
+  }
+}
+.memory {
+  background-color: var(--secondary);
+  animation: pulse 4s;
+  animation-iteration-count:initial;
+}
+
+@media screen and (max-width: 600px) {
+  #cards img {
+    width: 75px;
+    height: auto;
+  }
+  #cards {
+    margin-bottom: 50px;
+  }
+  .head {
+    font-size: 2em;
+  }
+   }
+
+
