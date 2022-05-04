@@ -29,8 +29,8 @@ document.getElementById("memorygame").addEventListener("click", function () {
 });
 document.getElementsByTagName("div");
  kard.addEventListener("click", function (): void {
-     kard.classList.toggle("flip");
- })
+         kard.classList.toggle("flip");
+     })
  function karteUmdrehen() {
      console.log("nö");
  }
