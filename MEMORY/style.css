@@ -1,0 +1,54 @@
+*{
+    padding:0%;
+    margin:0%;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    background: #E8F2D0;
+    display: flex;
+}
+#memorygame {
+    border: 2px solid #7CA692;
+    width: 640px;
+    height: 640px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+
+}
+.memorykarte{
+    width: 25%;
+    height: 33,333%;
+    border: 2px solid #BF9004 ;
+    position: relative;
+    margin: 5px;
+    transform: scale(1);
+}
+.memorykarte:active {
+    transform: scale(.97);
+    transition: transform .2s;
+}
+.memorykarte.flip {
+    transform: rotateY(180deg);
+    }
+
+    #penis.flip {
+        transform: rotateY(180deg);
+        }
+
+
+.frontface,
+.backface{
+    width: calc(25%-10px);
+    height: 100%;
+    padding: 20px;
+border-radius: 5px;
+background:#7CA692;
+border: solid 2px #8C5D42;
+position: absolute;
+}
+
+img {
+    width: 100px;
+}
