@@ -1,5 +1,6 @@
 "use strict";
 const timer = document.querySelector("#timer");
+console.log(timer);
 const button = document.querySelector("#startbutton");
 const karten = document.querySelectorAll(".memorykarten");
 var containerkarten = document.getElementById("memorygame");
@@ -7,57 +8,63 @@ var karten3 = document.getElementsByClassName("memorykarten").length;
 const kart4 = document.getElementsByClassName("background");
 var backfacesource = "Pictures/background.jpg";
 var frontfacesource = ["Pictures/catbw.jpg", "Pictures/catfluffy.jpg", "Pictures/catgrumpy.jpg", "Pictures/cathand.jpg", "Pictures/catnos.jpg", "Pictures/catotongue.jpg", "Pictures/catsleepy.jpg", "Pictures/catstreet.jpg"];
-var bilderArray = [];
+// var bilderArray = [];
 var idindex = 0;
+
+for (let i = 0; i < 2; i++) {
+    kartenVerwalten(); //Grundfunktion, zum Start
+    idindex = 0; //reset für 2. Durchlauf
+}
+
 function kartenVerwalten() {
+
     let newImg = document.createElement("img");
     newImg.src = backfacesource;
     newImg.id = idindex.toString();
     newImg.classList.add("memorykarte"); //bilder in class memorykarte
-    bilderArray.push(newImg);
+    // bilderArray.push(newImg);
     idindex++;
     containerkarten.appendChild(newImg);
     if (idindex < 8) {
         kartenVerwalten(); //rekursion, erstellt 8 karten, hört danach auf
     }
-
-
-
-
-    
     newImg.addEventListener("click", function () {
         newImg.src = frontfacesource[parseFloat(newImg.id)];
     });
 }
-document.getElementById("memorygame").addEventListener("click", function () {
-    alert(karten3);
-});
+
+
+
+
+// document.getElementById("memorygame").addEventListener("click", function () {
+//     alert(karten3);
+// });
 document.getElementsByTagName("div");
- kard.addEventListener("click", function () {
-         kard.classList.toggle("flip");
-     })
- function karteUmdrehen() {
-     console.log("nö");
- }
- karten.forEach(karten => {
-     karten.addEventListener("click", karteUmdrehen);
- });
+//  kard.addEventListener("click", function () {
+//          kard.classList.toggle("flip");
+//      })
+function karteUmdrehen() {
+    console.log("nö");
+}
+karten.forEach(karten => {
+    karten.addEventListener("click", karteUmdrehen);
+});
 var timerLauft = false;
 var seconds = 0;
 var minutes = 0;
 var startbutton = true;
-button.addEventListener("click", function () {
-    if (startbutton == true) {
-        timerLauft = true;
-        timerZählt();
-        console.log("hallo");
-        for (var i = 1; i <= 2; i++) {
-            kartenVerwalten();
-            idindex = 0; //nach erstem durchlauf (8karten), 2. durchlauf, muss auf null gesetzt werden
-        }
-        startbutton = false;
-    }
-});
+// button.addEventListener("click", function () {
+//     if (startbutton == true) {
+//         timerLauft = true;
+//         timerZählt();
+//         console.log("hallo");
+//         for (var i = 1; i <= 2; i++) {
+//             kartenVerwalten();
+//             idindex = 0; //nach erstem durchlauf (8karten), 2. durchlauf, muss auf null gesetzt werden
+//         }
+//         startbutton = false;
+//     }
+// });
 function timerZählt() {
     setTimeout(() => {
         seconds++;

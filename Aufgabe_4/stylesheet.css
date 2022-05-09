@@ -176,7 +176,7 @@ a.linkgame {
 }
 .memorykarte{
   width: 25%;
-  height: 33,333%;
+  height: 33,333%; /* nach bearbeitung entfernen, gleiche werte verwenden
  /* border: 2px solid #BF9004 ;*/
   position: relative;
   margin: 5px;
