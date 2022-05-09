@@ -20,6 +20,11 @@ function kartenVerwalten() {
     if (idindex < 8) {
         kartenVerwalten(); //rekursion, erstellt 8 karten, hört danach auf
     }
+
+
+
+
+    
     newImg.addEventListener("click", function () {
         newImg.src = frontfacesource[parseFloat(newImg.id)];
     });
@@ -28,7 +33,7 @@ document.getElementById("memorygame").addEventListener("click", function () {
     alert(karten3);
 });
 document.getElementsByTagName("div");
- kard.addEventListener("click", function (): void {
+ kard.addEventListener("click", function () {
          kard.classList.toggle("flip");
      })
  function karteUmdrehen() {
