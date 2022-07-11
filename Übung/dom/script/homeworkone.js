@@ -65,3 +65,6 @@ var word1 = words[0];
 var word2 = words[1];
 var word3 = words[2];
 console.log (word2);
+
+
+
