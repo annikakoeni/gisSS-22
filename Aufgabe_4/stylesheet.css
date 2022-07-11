@@ -166,9 +166,9 @@ a.linkgame {
 }
 
 #memorygame {
-  border: 2px solid #7CA692;
-  width: 640px;
-  height: 640px;
+  border: 6px solid #7CA692;
+  width: 80%;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
   margin: auto;
