@@ -116,6 +116,15 @@ let katze = document.createElement ("p");
 katze.textContent = "gato";
 body.appendChild (katze);
 
-katze.addEventListener("click");
+katze.addEventListener("click", pushed);
 
 
+function pushed() {
+
+    if (katze.textContent === "gato"){
+        katze.textContent = "Push me!";
+    }
+    else {
+        katze.textContent = "neko!";
+    }
+}
