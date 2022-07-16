@@ -49,7 +49,7 @@ Flobody.append("Ohne Element"); // #2 Append erklaeren
 //let body = document.body; // #1
 //let p = document.createElement("div"); // #4 element erstellen
 
-body.append("Ohne Element"); // #2 Append erklaeren
+//body.append("Ohne Element"); // #2 Append erklaeren
 
 let pimmel = document.getElementsByTagName("div");
 pimmel[1].textContent = "Hier steht doch was!"
@@ -83,8 +83,27 @@ function logElemenets() {
 }
 
 // Vererbung in der DOM
+//Appending
+let newElement = document.createElement("p");
+newElement.textContent = "blabla"
+body.appendChild(newElement);
 
-let newElement = document.createElement("new");
+let search = document.getElementsByTagName ("p");
+console.log(search);
+let stelle = search[5];
 
-newElement.appendChild("new");
-te
+
+body.insertBefore(newElement, stelle);
+
+//
+
+let texttausch = document.getElementsByTagName ("h3");
+texttausch[0].textContent = "nööö"
+body.appendChild(texttausch[0]);
+console.log(texttausch);
+
+
+//klonen
+
+
+
