@@ -138,7 +138,7 @@ getInfobox.addEventListener ("click", gibBox);
 let getInfobox2 = document.createElement ("h3");
 getInfobox2.textContent ="wuff"
 body.appendChild (getInfobox2);
-getInfobox.addEventListener ("click", gibBox)
+getInfobox2.addEventListener ("click", gibBox)
 
 function gibBox (event){
     event.currentTarget.className = "infoBox"
