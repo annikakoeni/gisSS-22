@@ -105,5 +105,17 @@ console.log(texttausch);
 
 //klonen
 
+let newElement2 = newElement.cloneNode(true);
+body.appendChild (newElement2);
+newElement2.textContent = "yeees"
+
+
+//Evetlistener
+
+let katze = document.createElement ("p");
+katze.textContent = "gato";
+body.appendChild (katze);
+
+katze.addEventListener("click");
 
 
