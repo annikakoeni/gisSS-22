@@ -45,3 +45,46 @@ Flobody.append("Ohne Element"); // #2 Append erklaeren
 //p.textContent = "Mit Element"
 
 //document.append()
+
+//let body = document.body; // #1
+//let p = document.createElement("div"); // #4 element erstellen
+
+body.append("Ohne Element"); // #2 Append erklaeren
+
+let pimmel = document.getElementsByTagName("div");
+pimmel[1].textContent = "Hier steht doch was!"
+
+let body = document.body; 
+
+body.append("Ohne Element");
+
+let div = document.createElement("div");
+
+div.textContent = "Mit Element";
+body.appendChild(div); //geht nur mit Elementen
+
+//changing 
+
+let divs = document.getElementsByTagName("div");
+console.log(divs)
+divs[0].className = "infoBox";
+
+// getting any element
+
+let testID = document.getElementById("testId");
+let pElements = testId.getElementsByTagName("p");
+let secondElement = pElements[1];
+
+function logElemenets() {
+    console.log(body);
+    console.log(testId);
+    console.log(pElements);
+    pElements[0].className = "infoBox";
+}
+
+// Vererbung in der DOM
+
+let newElement = document.createElement("new");
+
+newElement.appendChild("new");
+te
