@@ -128,3 +128,21 @@ function pushed() {
         katze.textContent = "neko!";
     }
 }
+
+let getInfobox = document.createElement ("h3");
+getInfobox.textContent ="miau"
+body.appendChild (getInfobox);
+getInfobox.addEventListener ("click", gibBox);
+
+
+let getInfobox2 = document.createElement ("h3");
+getInfobox2.textContent ="wuff"
+body.appendChild (getInfobox2);
+getInfobox.addEventListener ("click", gibBox)
+
+function gibBox (event){
+    event.currentTarget.className = "infoBox"
+    
+
+
+}
