@@ -142,7 +142,41 @@ getInfobox2.addEventListener ("click", gibBox)
 
 function gibBox (event){
     event.currentTarget.className = "infoBox"
-    
 
+
+}
+
+
+//up down
+var number = 0;
+
+let counter = document.createElement ("h2");
+body.appendChild (counter);
+counter.textContent = 0;
+
+let buttonup = document.createElement ("button");
+body.appendChild (buttonup);
+buttonup.textContent = "Up";
+buttonup.addEventListener ("click", upDown);
+
+let buttondown = document.createElement ("button");
+body.appendChild (buttondown);
+buttondown.textContent = "Down"
+buttondown.addEventListener ("click", upDown);
+
+
+
+function upDown (event){
+    if(event.currentTarget.textContent === "Up"){
+        ++number;
+        counter.textContent = number;
+
+
+    }
+    else {
+    --number;
+    counter.textContent = number;
+
+    }
 
 }
