@@ -180,3 +180,27 @@ function upDown (event){
     }
 
 }
+
+
+//Object definieren
+
+const obj = {
+    name: "Krebs",
+    alter: 3,
+    blabla: "ajhja"
+}
+console.log(obj.blabla);
+
+
+const cat = {};
+
+cat.alter = 7;
+cat.name = "Fello";
+cat.sound = "mau";
+cat.color = "striped";
+
+let catAsJson = JSON.stringify(cat);
+console.log (catAsJson);
+
+let catParse = JSON.parse (catAsJson);
+console.log (catParse);
