@@ -204,3 +204,4 @@ console.log (catAsJson);
 
 let catParse = JSON.parse (catAsJson);
 console.log (catParse);
+
